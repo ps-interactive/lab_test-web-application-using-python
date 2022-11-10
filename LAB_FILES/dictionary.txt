@@ -2,4 +2,7 @@ admin
 emails
 database
 user
+secretadmin
 private
+wp-login.php
+

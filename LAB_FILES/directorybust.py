@@ -8,6 +8,6 @@ for line in dictionaryfile:
   print('Testing: '+addresstotest)
   pageresponse = requests.get(addresstotest)
   if pageresponse:
-    print('Found a folder: '+addresstotest)
+    print('Found a resource: '+addresstotest)
 
 
