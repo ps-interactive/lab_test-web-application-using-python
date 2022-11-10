@@ -1,8 +1,8 @@
 import requests
 
-address = 'http://localhost/DVWA-master'
+address = 'http://localhost'
 
-dictionary = open("dictionary.txt","r")
+dictionaryfile = open("dictionary.txt","r")
 for line in dictionaryfile:
   addresstotest = address + "/" + line.strip()
   print('Testing: '+addresstotest)
